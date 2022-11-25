@@ -1,0 +1,143 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"stateMutability": "nonpayable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "Id",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "Amount",
+						"type": "int256"
+					},
+					{
+						"internalType": "string",
+						"name": "ProductName",
+						"type": "string"
+					}
+				],
+				"name": "addStore",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "Id",
+						"type": "int256"
+					}
+				],
+				"name": "get",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "product_name",
+								"type": "string"
+							},
+							{
+								"internalType": "int256",
+								"name": "amount",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "id",
+								"type": "int256"
+							}
+						],
+						"internalType": "struct Stores.Store",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"name": "recStores",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "product_name",
+						"type": "string"
+					},
+					{
+						"internalType": "int256",
+						"name": "amount",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "id",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"practice3.sol": "Stores"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"practice3.sol": {
+			"keccak256": "0x2496b1453a04ec6191992663a1293116d57dc7c1629673e56c798e471819f967",
+			"urls": [
+				"bzz-raw://408b8617de1471f963ab1b45f846ac30b57c20b40683abef1a53fca5a4366b11",
+				"dweb:/ipfs/QmYnUiWYuEkDCyPxLbXpVQw8tUyB4tUwUdp2JnCqPZTDY3"
+			]
+		}
+	},
+	"version": 1
+}
